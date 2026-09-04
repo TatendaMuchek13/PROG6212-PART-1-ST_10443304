@@ -14,6 +14,9 @@
 --CategoryName VARCHAR(225) NOT NULL
 --);
 
+
+
+
 --ALTER TABLE Category
 --ALTER COLUMN CateID VARCHAR(20);
 
@@ -60,10 +63,24 @@
 --FOREIGN KEY (CateID) REFERENCES Category(CateID)
 --);
 
+--SELECT * FROM Participate;
+--SELECT * FROM Category;
+--SELECT * FROM Enrollment;
+--SELECT * FROM Events;
+--SELECT * FROM Organiser;
+--SELECT * FROM Results;
 
+--INSERT INTO Participate(PNumber,Participate_Name,Participate_Surname,Participate_Cell)
+--VALUES
+--(1,'Tatenda','Mucheki','0653747221'),
+--(2, 'John', 'Smith', '0712345678'),
+--(3, 'Sarah', 'Mokoena', '0823456789'),
+--(4, 'Michael', 'Dlamini', '0734567890'),
+--(5, 'Lerato', 'Nkosi', '0845678901'),
+--(6, 'Brian', 'Mthembu', '0767890123');
 
-
-
-
-
-SELECT * FROM Results;
+--INSERT INTO Category(CateID,CategoryName )
+--Values
+--('C001','Running'),
+--('C002','Walking'),
+--('C003','Cycling');
