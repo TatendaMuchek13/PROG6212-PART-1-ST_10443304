@@ -48,6 +48,9 @@
 --FOREIGN KEY (OrganiserCode) REFERENCES Organiser(OrganiserCode)
 --);
 
+--ALTER TABLE Events
+--ADD EventName VARCHAR(255);
+
 --CREATE TABLE Results
 --(
 --ResultsID VARCHAR(20) NOT NULL PRIMARY KEY,
@@ -60,12 +63,12 @@
 --FOREIGN KEY (CateID) REFERENCES Category(CateID)
 --);
 
---SELECT * FROM Participate;
---SELECT * FROM Category;
---SELECT * FROM Enrollment;
---SELECT * FROM Events;
---SELECT * FROM Organiser;
---SELECT * FROM Results;
+SELECT * FROM Participate;
+SELECT * FROM Category;
+SELECT * FROM Enrollment;
+SELECT * FROM Events;
+SELECT * FROM Organiser;
+SELECT * FROM Results;
 
 --INSERT INTO Participate(PNumber,Participate_Name,Participate_Surname,Participate_Cell)
 --VALUES
@@ -92,3 +95,15 @@
 --('OR001','Mansi','Boyi','0626531984'),
 --('OR002', 'John', 'Lovu', '0696132089'),
 --('OR003', 'Amanda', 'Vought', '0823003489');
+
+--INSERT INTO Events(EventID,EnrollID,OrganiserCode,Date_Of_Event,Route_Info,EventName)
+--VALUES
+--('EV001','EN001','OR002','2026-07-08','Joburg City Centre','Joburg Sprints'),
+--('EV002', 'EN002', 'OR001', '2026-08-15', 'Pretoria CBD', 'Pretoria Dash'), 
+--('EV003', 'EN001', 'OR003', '2026-09-12', 'Soweto Route', 'Soweto Run');
+
+--INSERT INTO Results (ResultsID, EnrollID, CateID, Results_Status, Finishing_Time) 
+--VALUES 
+--('RES001', 'EN001', 'C001', 'Finished', '00:42:35'),
+--('RES002', 'EN002', 'C003', 'Finished', '00:35:48')
+--;
