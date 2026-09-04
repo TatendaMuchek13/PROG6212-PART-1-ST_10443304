@@ -10,9 +10,12 @@
 
 --CREATE TABLE Category
 --(
---CateID VARCHAR(10) NOT NULL PRIMARY KEY,----change to 20
+--CateID VARCHAR(20) NOT NULL PRIMARY KEY,
 --CategoryName VARCHAR(225) NOT NULL
 --);
+
+--ALTER TABLE Category
+--ALTER COLUMN CateID VARCHAR(20);
 
 --CREATE TABLE Organiser
 --(
@@ -22,9 +25,45 @@
 --Organiser_Cell VARCHAR(10) NOT NULL
 --);
 
-CREATE TABLE Enrollment
-(
-EnrollID VARCHAR(20) NOT NULL PRIMARY KEY,
-Date_Of_Enroll DATE NOT NULL,
-PNumber INT NOT NULL
-);
+--CREATE TABLE Enrollment
+--(
+--EnrollID VARCHAR(20) NOT NULL PRIMARY KEY,
+--Date_Of_Enroll DATE NOT NULL,
+--PNumber INT NOT NULL,--
+--CateID VARCHAR(20) NOT NULL,--
+
+--FOREIGN KEY (PNumber) REFERENCES Participate(PNumber),
+--FOREIGN KEY (CateID) REFERENCES Category(CateID)
+--);
+
+--CREATE TABLE Events
+--(
+--EventID VARCHAR(20) NOT NULL PRIMARY KEY,
+--EnrollID VARCHAR(20) NOT NULL,--
+--OrganiserCode VARCHAR(20) NOT NULL,--
+--Date_Of_Event DATE NOT NULL,
+--Route_Info VARCHAR(255) NOT NULL,
+
+--FOREIGN KEY (EnrollID) REFERENCES Enrollment(EnrollID),
+--FOREIGN KEY (OrganiserCode) REFERENCES Organiser(OrganiserCode)
+--);
+
+--CREATE TABLE Results
+--(
+--ResultsID VARCHAR(20) NOT NULL PRIMARY KEY,
+--EnrollID VARCHAR(20) NOT NULL,
+--CateID VARCHAR(20) NOT NULL,
+--Results_Status VARCHAR(255) NOT NULL,
+--Finishing_Time VARCHAR(255) NOT NULL,
+
+--FOREIGN KEY (EnrollID) REFERENCES Enrollment(EnrollID),
+--FOREIGN KEY (CateID) REFERENCES Category(CateID)
+--);
+
+
+
+
+
+
+
+SELECT * FROM Results;
