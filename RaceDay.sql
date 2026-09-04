@@ -14,9 +14,6 @@
 --CategoryName VARCHAR(225) NOT NULL
 --);
 
-
-
-
 --ALTER TABLE Category
 --ALTER COLUMN CateID VARCHAR(20);
 
@@ -84,3 +81,14 @@
 --('C001','Running'),
 --('C002','Walking'),
 --('C003','Cycling');
+
+--INSERT INTO Enrollment(EnrollID,Date_Of_Enroll,PNumber,CateID)
+--VALUES
+--('EN001','2026-03-22',1,'C001'),
+--('EN002','2026-01-01',4,'C003');
+
+--INSERT INTO Organiser(OrganiserCode,Organiser_Name,Organiser_Surname,Organiser_Cell)
+--VALUES
+--('OR001','Mansi','Boyi','0626531984'),
+--('OR002', 'John', 'Lovu', '0696132089'),
+--('OR003', 'Amanda', 'Vought', '0823003489');
